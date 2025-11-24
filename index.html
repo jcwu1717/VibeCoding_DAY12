@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>狗狗年齡計算機</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>狗狗年齡計算機</h1>
+    <div class="row">
+      <label for="dogBirth"><strong>狗狗的出生日期</strong></label>
+      <input type="date" id="dogBirth" name="dogBirth">
+    </div>
+    <div class="row">
+      <button id="calcBtn">開始計算</button>
+    </div>
+    <div class="row">
+      <p id="result">請選擇日期並點擊「開始計算」</p>
+    </div>
+    <div class="ref">
+      <p>資料來源：Wang et al., “Quantitative translation of dog-to-human aging by conserved remodeling of epigenetic networks”, <em>Cell Systems</em>, 2020.</p>
+      <p>公式：Human age ≈ 16 × ln(Dog age) + 31</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

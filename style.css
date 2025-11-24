@@ -1,0 +1,132 @@
+/* 全域設定 */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: url("https://images.unsplash.com/photo-1594499468121-f45e83e30df4?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* 主容器 */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+/* 標題 */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 每列 */
+.row {
+  margin-bottom: 20px;
+}
+
+/* 輸入框與標籤 */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 按鈕 */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 結果文字 */
+#result {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+/* 來源與公式說明 */
+.ref {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+.ref p {
+  margin: 4px 0;
+}
+
+/* 響應式設計 */
+/* 手機 (最大寬度 375px) */
+@media (max-width: 375px) {
+  .container {
+    margin-top: 20px;
+    padding: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
+  #result {
+    font-size: 18px;
+  }
+}
+
+/* 平板 (最大寬度 768px) */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 30px;
+    padding: 18px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  button {
+    font-size: 17px;
+    padding: 11px;
+  }
+  #result {
+    font-size: 19px;
+  }
+}
+
+/* 桌機 (最低寬度 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 60px;
+    padding: 30px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  button {
+    font-size: 20px;
+    padding: 14px;
+  }
+  #result {
+    font-size: 22px;
+  }
+}
